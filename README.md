@@ -13,7 +13,7 @@ Yong Liu
 This is the official implementation of the paper "E-NeRV: Expedite Neural Video Representation with Disentangled Spatial-Temporal Context".
 
 ## Method overview
-<img src="https://i.imgur.com/OTdHe6r.png" width="560"  />
+<img src=./assets/method.png width="800"  />
 
 ## Get started
 We run with Python 3.8, you can set up a conda environment with all dependencies like so:
