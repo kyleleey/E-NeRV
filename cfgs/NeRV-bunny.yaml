@@ -1,0 +1,36 @@
+seed: 1  # same as the original NeRV repo
+dataset_path: ./data/bunny
+dataset_type: all 
+model:
+  model_name: NeRV
+  pos_b: 1.25
+  pos_l: 80
+  stem_dim_num: '512_1'
+  fc_hw_dim: '9_16_112'
+  act: gelu
+  stride_list: [5, 2, 2, 2, 2]
+  expansion: 1
+  reduction: 2
+  lower_width: 96
+  num_blocks: 1
+  bias: true
+  norm: none
+  conv_type: conv
+  sin_res: true
+  sigmoid: true
+
+train_batchsize: 1
+val_batchsize: 1
+workers: 4
+epoch: 300
+optim:
+  optim_type: Adam
+  lr: 0.0005
+  beta1: 0.5
+  beta2: 0.999
+  lr_schedule: warmup_cosine
+  lr_point: 0.2
+
+loss: Fusion6
+print_freq: 50 # every 50 steps in each epoch to print
+eval_freq: 50  # every 50 epochs to conduct evaluation
