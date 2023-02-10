@@ -7,7 +7,7 @@ __pycache__/
 *.so
 
 # PROJECT RELATED
-data/
+# data/
 outputs/
 test.ipynb
 
